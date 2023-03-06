@@ -41,8 +41,7 @@ Corner cases check | ✓
   3. Pick the letter if this target is better than the current target.
   4. else do not pick the letter and pass.
   ````
-
-
+* As we can see, this is a method like BFS.
 
 ## Game Demo
 * 
