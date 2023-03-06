@@ -88,4 +88,4 @@ Corner cases check | ✓
         ----------------------------------------------------------------
         Game End! Computer Wins!! Its word is dmv .
     ````
-* After getting into the system, the functions are different for each group.
+
