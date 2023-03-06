@@ -26,7 +26,25 @@ Build hard AI | ✓
 Corner cases check | ✓
 
 ## Overview of work accomplished
-* This is a pick your letter game. You can play with a hard AI. The first side who successfully get a word from the dictionary is the winner. The logic is like:
+* This is a pick your letter game. You can play with a hard AI. The first side who successfully get a word from the dictionary is the winner. The logic is shown in the last section.
+* The AI is stupid in the first version, it only stick to a single word for the whole game. After upgrading it for several times, it will search the best word every time so it is almost impossible to defeat it when the length of the target word is large.
+
+
+## Challenges
+* The design of AI is pretty challenging. I built a fair enough strategy for the AI:
+* ````
+
+  1. If the current word is a dictionary word, AI wins (exit).
+  2. Compute the similarity between each dict word and current word:
+     - wasp and swap has a similarity = 0
+     - swap and swan has a similarity = 1
+  3. Pick the letter if this target is better than the current target.
+  4. else do not pick the letter and pass.
+  ````
+
+
+
+## Game Demo
 * 
     ````
         Welcome to the game!
